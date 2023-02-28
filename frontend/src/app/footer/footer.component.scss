@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main{
+    background-color: #F3F3F3;
+    padding: 3vw 12vw;
+}
+.logo{
+    height: 3vw;
+    opacity: 0.8;
+}
+h1{
+    font-size: 1.5rem;
+    color: #678398;
+}
+ul{
+    list-style-type: none;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #678398;
+    font-size: 1rem;
+}
