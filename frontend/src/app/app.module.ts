@@ -8,10 +8,14 @@ import { FooterComponent } from './footer/footer.component';
 import { ContactComponent } from './contact/contact.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { RouterModule, Routes } from '@angular/router';
+import { RegisterComponent } from './register/register.component';
+import { LoginComponent } from './login/login.component';
 
 const routes:Routes = [
   {path: "", component: LandingPageComponent},
   {path: "help", component: ContactComponent},
+  {path: "register", component: RegisterComponent},
+  {path: "login", component: LoginComponent},
 ]
 @NgModule({
   declarations: [
@@ -19,7 +23,9 @@ const routes:Routes = [
     NavbarComponent,
     FooterComponent,
     ContactComponent,
-    LandingPageComponent
+    LandingPageComponent,
+    RegisterComponent,
+    LoginComponent
   ],
   imports: [
     
