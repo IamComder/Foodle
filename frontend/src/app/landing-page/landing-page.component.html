@@ -49,13 +49,31 @@
             </div>
         </div>
     </div>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti corporis excepturi unde quia nemo beatae at repudiandae amet iusto blanditiis voluptatem aliquam, numquam voluptatibus omnis dolor fugiat consequuntur asperiores nihil repellendus! Optio consectetur quod eius quia ducimus! Corrupti dolores voluptates quae natus, neque, earum beatae pariatur doloremque sunt assumenda aspernatur.</p>
+    <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti corporis excepturi unde quia nemo beatae at repudiandae amet iusto blanditiis voluptatem aliquam, numquam voluptatibus omnis dolor fugiat consequuntur asperiores nihil repellendus! Optio consectetur quod eius quia ducimus! Corrupti dolores voluptates quae natus, neque, earum beatae pariatur doloremque sunt assumenda aspernatur.</p>
+    <div id="line4"></div>
+</div>
+<div class="testimonal">
+    <h1>Our <span id="testimonial">testimonials</span></h1>
+    <p-carousel  [value]="testimonals" styleClass="custom-carousel" [numScroll]="1" [circular]="true" [autoplayInterval]="3000" [showIndicators]="false" styleClass="carousel" [showNavigators]="false" [responsiveOptions]="responsiveOptions">
+        <!-- <ng-template pTemplate="header">
+            <h5>Circular, AutoPlay, 3 Items per Page and Scroll by 1</h5>
+        </ng-template> -->
+        <ng-template let-testimonal pTemplate="item">
+            <div class="testimonal-item">
+                <img [src]="testimonal.image" alt="">
+                <div class="content">
+                    <h2>{{testimonal.name}}</h2>
+                    <p>{{testimonal.feedback}}</p>
+                </div>
+            </div>
+        </ng-template>
+    </p-carousel>
 </div>
 <div class="app">
     <div class="download">
         <h1>foodel on the go</h1>
         <p>Order  conveniently, <br> download our app.</p>
-        <div>
+        <div class="store">
             <img src="../../assets/playstore.png" alt="">
             <img src="../../assets/appstore.png" alt="">
         </div>

@@ -10,9 +10,14 @@ import { LandingPageComponent } from './landing-page/landing-page.component';
 import { RouterModule, Routes } from '@angular/router';
 import { RegisterComponent } from './register/register.component';
 import { LoginComponent } from './login/login.component';
+import { AccordionModule } from 'primeng/accordion';
+import { MenuItem } from 'primeng/api';
+import { CarouselModule } from 'primeng/carousel'
+import { ButtonModule } from 'primeng/button'
 
 const routes:Routes = [
   {path: "", component: LandingPageComponent},
+  {path: "home", component: LandingPageComponent},
   {path: "help", component: ContactComponent},
   {path: "register", component: RegisterComponent},
   {path: "login", component: LoginComponent},
@@ -28,9 +33,11 @@ const routes:Routes = [
     LoginComponent
   ],
   imports: [
-    
+    AccordionModule,
     BrowserModule,
     AppRoutingModule,
+    ButtonModule,
+    CarouselModule,
     RouterModule.forRoot(routes)
   ],
   exports:[RouterModule],

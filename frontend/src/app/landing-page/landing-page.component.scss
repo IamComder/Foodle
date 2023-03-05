@@ -1,11 +1,11 @@
 .details{
-    height: 80vh;
+    padding: 10vw 0;
 }
 .details h1{
-    font-size: 3rem;
+    font-size: 5vw;
 }
 .details p{
-    font-size: 2rem;
+    font-size: 3vw;
 }
 #line1{
     width: 70vw;
@@ -51,8 +51,14 @@
    padding: 0 6vw;
 }
 
+.about h1{
+    font-size: 55px;
+    margin-bottom: 2vw;
+}
+
 .about p{
     text-align: justify;
+    font-size: 30px;
 }
 
 #foodle{
@@ -78,6 +84,15 @@
     justify-content: center;
     align-items: center;
     padding: 0 6vw;
+}
+
+.founders h1{
+    font-size: 60px;
+}
+
+.founders .para{
+    font-size: 30px;
+    text-align: justify;
 }
 
 .founders .profile{
@@ -106,12 +121,12 @@
 }
 
 .founders .profile .card-container .content h2{
-    font-size: 3rem;
+    font-size: 4vw;
 }
 
 .founders .profile .card-container .content p{
-    font-size: 2rem;
-    line-height: 2rem;
+    font-size: 2vw;
+    line-height: 2vw;
     // display: flex;
     // justify-content: center;
     // align-items: center;
@@ -134,6 +149,13 @@
     color: transparent;
     -webkit-text-fill-color: transparent;
 }
+#line4{
+    width: 20vw;
+    height: 2px;
+    background-color: black;
+    margin: 2.5rem;
+}
+
 .app{
     display: flex;
     width: 100%;
@@ -147,24 +169,29 @@
 }
 
 .app .download h1{
-    font-size: 3rem;
+    font-size: 4.5vw;
     font-weight: 700;
 }
 
 .app .download p{
-    font-size: 1.8rem;
-    line-height: 2rem;
+    font-size: 3vw;
+    line-height: 3.1vw;
     color: grey;
     padding-bottom: .5vw;
 }
 
-.app .download div{
+.app .download .store{
     display: flex;
     gap: 2vw;
 }
 
+.app .download .store img{
+    height: 5vw;
+}
+
 .app .preview{
     width: 50%;
+    height: auto;
     display: flex;
     // background-color: rebeccapurple;
     position: relative;
@@ -173,7 +200,7 @@
 
 .app .preview img:nth-child(1){
     // width: 200px;
-    height: 160px;
+    height: 13vw;
     position: absolute;
     top: 0;
     left: 0;
@@ -181,8 +208,150 @@
 
 .app .preview img:nth-child(2){
     // width: 200px;
-    height: 200px;
+    height: 17vw;
     position: absolute;
     bottom: 0;
     right: 0;
+}
+
+// .testimonal{
+//     background-color: red;
+// }
+.testimonal h1{
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    // flex-direction: column;
+    // width: 100%;
+    font-size: 60px;
+    text-align: center;
+}
+
+#testimonial{
+    background: linear-gradient(to right, red, blue);
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    font-weight: 700;
+}
+
+
+.testimonal-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 10%;
+}
+
+.testimonal-item img{
+    width: 100%;
+    text-align: center;
+    aspect-ratio: 1/1;
+}
+
+.testimonal-item .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    // align-items: center;
+}
+
+.testimonal-item .content h2{
+    font-size: 30px;
+    text-align: left;
+    margin-top: 2vw;
+}
+   // .app{
+    //     display: flex;
+    //     flex-direction: column;
+    //     gap: 4vw;
+    // }
+.testimonal-item .content p{
+    font-size: 22px;
+    text-align: justify;
+    // margin-top: 1vw;
+}
+
+.p-carousel-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: green;
+}
+
+// p-carousel-item-active 
+.p-carousel-item-start{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: green;
+}
+
+@media screen and (max-width:700px) {
+    .about p{
+        font-size: 25px;
+    }
+    .about h1{
+        font-size: 45px;
+    }
+    .founders h1{
+        font-size: 45px;
+    }
+    .founders .para{
+        font-size: 25px;
+    }
+    .testimonal h1{
+        font-size: 45px;
+    }
+    
+ 
+}
+
+@media screen and (max-width: 700px) {
+    .app{
+        display: flex;
+        flex-direction: column;
+        gap: 4vw;
+    }
+    .app .download{
+        margin-bottom: 2rem;
+        width: 100%;
+        // display: flex;
+        // flex-direction: column;
+        // justify-content: center;
+        // align-items: center;
+        // background-color: green;
+    }
+    .app .download h1{
+        font-size: 8vw;
+        text-align: center;
+    }
+    .app .download p{
+        font-size: 6vw;
+        line-height: 6vw;
+        text-align: center;
+    }
+    .app .download .store{
+        gap: 6vw;
+        text-align: center;
+        justify-content: center;
+    }
+    .app .download .store img{
+        height: 11vw;
+    }
+
+    .app .preview{
+        width: 100%;
+        height: 35vw;
+    }
+    .app .preview img:nth-child(1){
+        height: 26vw;
+    }
+    .app .preview img:nth-child(2){
+        height: 31vw;
+    }
+   
 }
