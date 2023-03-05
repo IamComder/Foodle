@@ -28,17 +28,20 @@
     margin-left: 1.5rem;
     margin-right: .5rem;
 }
+
  .map{
     height: 30vw;
     width: 90%;
     background-color: grey;
 }
+
 #line2{
     width: 55vw;
     height: 2px;
     background-color: black;
     margin: 2.5rem;
 }
+
 .about{
    width: 100%;
    display: flex;
@@ -47,9 +50,11 @@
    align-items: center;
    padding: 0 6vw;
 }
+
 .about p{
     text-align: justify;
 }
+
 #foodle{
     font-weight: 700;
     background: linear-gradient(to right, blue ,red);
@@ -58,12 +63,14 @@
     color: transparent;
     -webkit-text-fill-color: transparent;
 }
+
 #line3{
     width: 35vw;
     height: 2px;
     background-color: black;
     margin: 2.5rem;
 }
+
 .founders{
     width: 100%;
     display: flex;
@@ -72,6 +79,53 @@
     align-items: center;
     padding: 0 6vw;
 }
+
+.founders .profile{
+    display: flex;
+    gap: 10vw;
+    padding: 3vw 0;
+}
+
+
+.founders .profile .card-container{
+    display: flex;
+    border: 1px solid grey;
+    padding: 15px 20px;
+    border-radius: 1rem;
+    gap: 2vw;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(231, 231, 231);
+}
+
+.founders .profile .card-container .content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.founders .profile .card-container .content h2{
+    font-size: 3rem;
+}
+
+.founders .profile .card-container .content p{
+    font-size: 2rem;
+    line-height: 2rem;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+}
+
+.founders .profile .card-container .image{
+    width: 10vw;
+    height: 14vw;
+    // border-radius: 50%;
+    background: url('/assets/profle.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
 #founder{
     font-weight: 700;
     background: linear-gradient(to right, blue ,red);
@@ -79,4 +133,56 @@
     background-clip: text;
     color: transparent;
     -webkit-text-fill-color: transparent;
+}
+.app{
+    display: flex;
+    width: 100%;
+    // background-color: rebeccapurple;
+    padding: 3vw 6vw;
+    position: relative;
+}
+
+.app .download{
+    width: 50%;
+}
+
+.app .download h1{
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.app .download p{
+    font-size: 1.8rem;
+    line-height: 2rem;
+    color: grey;
+    padding-bottom: .5vw;
+}
+
+.app .download div{
+    display: flex;
+    gap: 2vw;
+}
+
+.app .preview{
+    width: 50%;
+    display: flex;
+    // background-color: rebeccapurple;
+    position: relative;
+    height: 18vw;
+}
+
+.app .preview img:nth-child(1){
+    // width: 200px;
+    height: 160px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.app .preview img:nth-child(2){
+    // width: 200px;
+    height: 200px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
