@@ -7,9 +7,18 @@
 //     outline: none;
 //     border: none;
 // }
+.contain{
+    width: 100%;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
 
 .navbar{
-    padding: 2vw 4vw;
+    padding:   30.29px 67px 5px 67px;
+    // position: fixed;
 }
 // .navbar-collapse{
 //     display: flex;
@@ -28,7 +37,14 @@
     text-align: center;
 }
 .navbar-nav a{
-    font-size: 25px;
+    font-size: 20px;
+    // line-height: 25px;
+}
+.navbar-nav a:hover{
+    text-decoration: underline;
+}
+.navbar-nav a:nth-child(4):hover{
+    text-decoration: none;
 }
 .navbar-nav a:nth-child(4){
     padding: 10px 20px;

@@ -1,11 +1,18 @@
 .details{
-    padding: 10vw 0;
+    // padding: 10vw 0;
+    height: 95vh;
 }
 .details h1{
-    font-size: 5vw;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 58px;
+
 }
 .details p{
-    font-size: 3vw;
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 44px;
 }
 #line1{
     width: 70vw;
@@ -30,9 +37,9 @@
 }
 
  .map{
-    height: 30vw;
+    height: 80vh;
     width: 90%;
-    background-color: grey;
+    // background-color: grey;
 }
 
 #line2{
@@ -52,13 +59,15 @@
 }
 
 .about h1{
-    font-size: 55px;
+    font-size: 50px;
     margin-bottom: 2vw;
 }
 
 .about p{
     text-align: justify;
-    font-size: 30px;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24px;
 }
 
 #foodle{
@@ -87,11 +96,14 @@
 }
 
 .founders h1{
-    font-size: 60px;
+    font-size: 50px;
 }
 
 .founders .para{
-    font-size: 30px;
+    // font-size: 30px;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24px;
     text-align: justify;
 }
 
@@ -105,7 +117,7 @@
 .founders .profile .card-container{
     display: flex;
     border: 1px solid grey;
-    padding: 15px 20px;
+    padding: 10px 10px;
     border-radius: 1rem;
     gap: 2vw;
     justify-content: center;
@@ -121,7 +133,7 @@
 }
 
 .founders .profile .card-container .content h2{
-    font-size: 4vw;
+    font-size: 3.5vw;
 }
 
 .founders .profile .card-container .content p{
@@ -135,7 +147,7 @@
 .founders .profile .card-container .image{
     width: 10vw;
     height: 14vw;
-    // border-radius: 50%;
+    border-radius: 1rem;
     background: url('/assets/profle.jpg');
     background-position: center;
     background-size: cover;
@@ -214,16 +226,18 @@
     right: 0;
 }
 
-// .testimonal{
-//     background-color: red;
-// }
+.test{
+    background-color: grey;
+    border: 1px;
+    border-radius: 10px;
+}
 .testimonal h1{
     // display: flex;
     // justify-content: center;
     // align-items: center;
     // flex-direction: column;
     // width: 100%;
-    font-size: 60px;
+    font-size: 50px;
     text-align: center;
 }
 
@@ -244,12 +258,14 @@
     flex-direction: column;
     width: 100%;
     padding: 10%;
+
 }
 
 .testimonal-item img{
     width: 100%;
     text-align: center;
     aspect-ratio: 1/1;
+    // border-radius: 10px;
 }
 
 .testimonal-item .content{
@@ -260,7 +276,7 @@
 }
 
 .testimonal-item .content h2{
-    font-size: 30px;
+    font-size: 25px;
     text-align: left;
     margin-top: 2vw;
 }
@@ -270,7 +286,7 @@
     //     gap: 4vw;
     // }
 .testimonal-item .content p{
-    font-size: 22px;
+    font-size: 20px;
     text-align: justify;
     // margin-top: 1vw;
 }
@@ -355,3 +371,4 @@
     }
    
 }
+

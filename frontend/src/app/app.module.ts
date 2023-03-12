@@ -13,7 +13,8 @@ import { LoginComponent } from './login/login.component';
 import { AccordionModule } from 'primeng/accordion';
 import { MenuItem } from 'primeng/api';
 import { CarouselModule } from 'primeng/carousel'
-import { ButtonModule } from 'primeng/button'
+import { ButtonModule } from 'primeng/button';
+import { MapComponent } from './map/map.component'
 
 const routes:Routes = [
   {path: "", component: LandingPageComponent},
@@ -30,7 +31,8 @@ const routes:Routes = [
     ContactComponent,
     LandingPageComponent,
     RegisterComponent,
-    LoginComponent
+    LoginComponent,
+    MapComponent
   ],
   imports: [
     AccordionModule,

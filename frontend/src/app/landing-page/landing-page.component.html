@@ -18,11 +18,10 @@
             <input type="checkbox">Main Course
             <input type="checkbox">Deserts
             <input type="checkbox">Drinks
-        </div>cing
-        Disa
+        </div>
     </div>
-    <div class="map d-flex justify-content-center align-items-center">
-        map only for demo
+    <div class="map">
+        <app-map></app-map>
     </div>
     <div id="line2"></div>
 </div>
@@ -54,7 +53,7 @@
 </div>
 <div class="testimonal">
     <h1>Our <span id="testimonial">testimonials</span></h1>
-    <p-carousel  [value]="testimonals" styleClass="custom-carousel" [numScroll]="1" [circular]="true" [autoplayInterval]="3000" [showIndicators]="false" styleClass="carousel" [showNavigators]="false" [responsiveOptions]="responsiveOptions">
+    <p-carousel [value]="testimonals" styleClass="custom-carousel"  [circular]="true" [autoplayInterval]="3000" [showIndicators]="false" styleClass="carousel" [showNavigators]="false" [responsiveOptions]="responsiveOptions">
         <!-- <ng-template pTemplate="header">
             <h5>Circular, AutoPlay, 3 Items per Page and Scroll by 1</h5>
         </ng-template> -->

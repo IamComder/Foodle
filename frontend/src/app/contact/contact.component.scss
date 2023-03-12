@@ -1,7 +1,21 @@
 .main{
-    padding: 5rem 10rem;
+    padding: 8rem 10rem 3rem 10rem;
 }
 .main h1{
-    padding-bottom: 1.5rem;
-    font-size: 3rem;
+    margin-bottom: 30px;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 58px;
+// /* identical to bo
+}
+.main h2{
+    font-weight: 500;
+    font-size: 32px;
+}
+.main p{
+    font-weight: 400;
+    font-size: 20px;
+}
+.email{
+    margin-top: 30px;
 }
